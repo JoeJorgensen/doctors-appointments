@@ -6,6 +6,12 @@ Rails.application.routes.draw do
     resources :doctors
     resources :appointments
     resources :patients
+
+
+    post 'patients/:id/appointments', to: 'appointments#create_with_patient'
+    post 'doctors/:id/appointments', to: 'appointments#create_with_doctor'
+
+
   end
 
   # root "articles#index"
