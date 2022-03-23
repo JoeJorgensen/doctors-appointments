@@ -19,6 +19,8 @@ function App() {
          <Link to="/patients">Patients</Link> {''}
          <Link to="/doctors">Doctors</Link> {''}
          <Link to="/appointments">Appointments</Link> {''}
+         <Link to="/appointments/new">New Appointments</Link> {''}
+
 
 
 

@@ -10,7 +10,8 @@ import Home from "./pages/Home";
 import Patients from "./pages/Patients";
 import Doctors from "./pages/Doctors";
 import Appointments from "./pages/Appointments";
-
+import AppointmentForm from './components/AppointmentForm';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NotFound = ()=>{
   return <p>path not found</p>
@@ -29,6 +30,8 @@ ReactDOM.render(
           <Route index path="/patients" element={<Patients />} />
           <Route index path="/doctors" element={<Doctors />} />
           <Route index path="/appointments" element={<Appointments />} />
+          <Route index path="/appointments/new" element={<AppointmentForm />} />
+
 
 
 

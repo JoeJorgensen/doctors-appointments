@@ -1,9 +1,10 @@
+import StringifyJSON from "./StringifyJSON"
 
 
 const List = ({list, renderItem})=>{
     const renderList = ()=>{
         if(!renderItem){
-            return { data={list}}
+            return <StringifyJSON data={list}/>
         }
 
         return list.map(renderItem)
