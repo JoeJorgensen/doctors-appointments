@@ -1,17 +1,37 @@
 import useAxios from "axios-hooks"
 import AxiosContainer from "../components/AxiosContainer"
 import Card from "../components/Card"
+import Patient from "../components/Patient"
 import StringifyJSON from "../components/StringifyJSON"
+import List from "../components/List"
+import UseAxiosOnMount from "../hooks/UseAxiosOnMount"
+import Badge from "react-bootstrap/esm/Badge"
 
 const Patients = ()=>{
-    const [{ data, loading, error}] = useAxios('api/patients')
-    if(loading)return <p>Loading Patients</p>
-    if(error)return <p>ERROR loading Patients</p>
+    const { data:patients, loading, error} = UseAxiosOnMount('api/patients')
+    // if(loading)return <p>Loading Patients</p>
+    // if(error)return <p>ERROR loading Patients</p>
+
+    const renderOnePatient=(patObj)=>{
+       return  <Patient {...patObj}/>
+    }
+
+   
+    
     return (
-        <AxiosContainer title={'Patients'} loading={loading} error={error}>
+        <div>
+
+        <AxiosContainer title={<Badge bg="dark">Patients</Badge>}loading={ loading} error={error}>
             {/* <h1>Patients</h1> */}
-            <StringifyJSON data={data}/>
+            <h1>
+                
+            </h1>
+
+            <List list={patients} renderItem={renderOnePatient}/>
+
+            {/* <StringifyJSON data={data}/> */}
         </AxiosContainer>
+        </div>
     )
 }
 

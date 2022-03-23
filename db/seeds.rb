@@ -25,10 +25,10 @@ Patient.create(name: 'Isaac')
 Patient.create(name: 'Will')
 
 
-Appointment.create(time: 440, description:'Check up', patient_id: 1, doctor_id: 1)
-Appointment.create(time: 440, description:'Eye appointment', patient_id: 1, doctor_id: 2)
-Appointment.create(time: 440, description:'Back Pain', patient_id: 4, doctor_id: 6)
-Appointment.create(time: 440, description:'New Perscription', patient_id: 5, doctor_id: 3)
+Appointment.create(time: 3.45, description:'Check up', patient_id: 1, doctor_id: 1)
+Appointment.create(time: 5.15, description:'Eye appointment',  patient_id: 1, doctor_id: 2)
+Appointment.create(time: 3.55, description:'Back Pain', patient_id: 4, doctor_id: 6)
+Appointment.create(time: 12.00, description:'New Perscription', patient_id: 5,  doctor_id: 3)
 
 
 

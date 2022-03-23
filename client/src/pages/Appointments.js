@@ -3,6 +3,7 @@ import UseAxiosOnMount from "../hooks/UseAxiosOnMount"
 import AxiosContainer from "../components/AxiosContainer";
 import Appointment from "./Appointment";
 import AppointmentForm from "../components/AppointmentForm";
+import Badge from "react-bootstrap/esm/Badge";
 
 const Appointments = ()=>{
 
@@ -23,11 +24,11 @@ const Appointments = ()=>{
         <div>
         {/* <AppointmentForm addAppointment={addAppointment}/> */}
 
-        <AxiosContainer title={'Appointments'} loading={loading} error={error} >
+        <AxiosContainer title={<Badge bg='dark'>Appointments</Badge>} loading={loading} error={error} >
             <List  list={appointments} renderItem={renderOneAppt}/>
         </AxiosContainer>
         </div>
-    )
-}
+    );
+};
 
 export default Appointments
