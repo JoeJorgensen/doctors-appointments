@@ -11,7 +11,7 @@ const Appointments = ()=>{
 
 
     const renderOneAppt = (apptObj)=>{
-        return <Appointment {...apptObj}/>
+        return <Appointment  {...apptObj}/>
     }
 
 

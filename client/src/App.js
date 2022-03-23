@@ -12,7 +12,7 @@ function App() {
           alignItems: "center",
         }}
       >
-        <h1>Starter App</h1>
+        <h1> Appointment App</h1>
         <nav>
           <Link to="/home">Home</Link> {''}
          <Link to="/about">About</Link> {''}

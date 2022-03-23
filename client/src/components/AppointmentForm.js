@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import UseAxiosOnMount from "../hooks/UseAxiosOnMount"
-import Card from "./Card";
+import Card from  "../components/Card"
 import StringifyJSON from "./StringifyJSON";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form'

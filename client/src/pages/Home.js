@@ -1,10 +1,15 @@
+import Card from "../components/Card"
+import Appointments from "./Appointments"
+
 const Home = ()=>{
     return (
+        <Card>
         <div>
-            <h1>Welcome to Starter Project!</h1>
-            <p>This is project meant to as a starting point for other projects</p>
-            <p>Check the about page and the README.md</p>
+            <h1>Welcome to the Appointment App!</h1>
+            {/* <p>Check the appointments page to see appointments</p> */}
+             <Appointments/>
         </div>
+        </Card>
     )
 }
 
