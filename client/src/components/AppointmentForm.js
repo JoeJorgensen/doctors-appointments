@@ -8,6 +8,7 @@ import Form from 'react-bootstrap/Form'
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import List from "./List";
+import Badge from "react-bootstrap/esm/Badge";
 
 const GradeForm = (props)=>{
 
@@ -54,43 +55,60 @@ const GradeForm = (props)=>{
 
     return (
    <div>
-       <h1>GradeForm</h1>
+       <h2>Appointment Form</h2>
 
 
 
 
         <Card>
-        <form onSubmit={handleSubmit}>
-            <p>Patient</p>
-            <br/>
-            <input value={patient_id} onChange={(e)=> set_patient_id (e.target.value)}/>
+        <form >
+            <h2>
+            <Badge>Patient ID:</Badge>
+            </h2>
             <br/>
             <br/>
 
-            <p>Doctor</p>
+            <input value={patient_id} onChange={(e)=> set_patient_id (e.target.value)}/>
+            <br/>
+            <br/>
+            <br/>
+
+
+            <h2><Badge>Doctor ID:</Badge></h2>
+
+            <br/>
             <br/>
             <input value={doctor_id} onChange={(e)=> set_doctor_id (e.target.value)}/>
             <br/>
             <br/>
+            <br/>
 
 
-            <p>Description</p>
+            <h2><Badge>Description</Badge></h2>
+            
+            <br/>
             <br/>
             <input value={description} onChange={(e)=> setDescription (e.target.value)}/>
             <br/>
             <br/>
+            <br/>
 
 
-            <p>Time</p>
+            <h2><Badge>Time</Badge></h2>
+            
+            <br/>
             <br/>
             <input value={time} onChange={(e)=> setTime (e.target.value)}/>
             <br/>
             <br/>
+            <br/>
 
-            
-            <button>
+
+            <Button onClick={handleSubmit}>
+            {/* <button> */}
                 Create Appointment
-                </button>
+                {/* </button> */}
+                </Button>
  
         </form>
         </Card>

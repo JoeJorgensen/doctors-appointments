@@ -18,7 +18,7 @@ const Doctors = ()=>{
 
     return (
 
-        <div>
+        <div style={{textAlign: 'center', margin: '10px', padding: '10px'}}>
         <AxiosContainer  title={ <Badge bg="dark">Doctors</Badge>}loading={loading} error={error}>
             {/* <h1>Doctors</h1> */}
             <h1>

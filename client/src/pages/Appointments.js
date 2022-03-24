@@ -21,7 +21,7 @@ const Appointments = ()=>{
     // }
     return (
         
-        <div>
+        <div style={{textAlign: 'center', margin: '10px', padding: '10px'}}>
         {/* <AppointmentForm addAppointment={addAppointment}/> */}
 
         <AxiosContainer title={<Badge bg='dark'>Appointments</Badge>} loading={loading} error={error} >

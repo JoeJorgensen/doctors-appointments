@@ -21,10 +21,10 @@ import Spinner from 'react-bootstrap/Spinner'
          return children
     }
     return (
-        <Card>
+        <div style={{textAlign: 'center', margin: '10px', padding: '10px'}}>
            <h1>{title}</h1>
            {renderBody()}
-        </Card>
+        </div>
     )
 }
 

@@ -19,7 +19,7 @@ const Patients = ()=>{
    
     
     return (
-        <div>
+        <div style={{textAlign: 'center', margin: '10px', padding: '10px'}}>
 
         <AxiosContainer title={<Badge bg="dark">Patients</Badge>}loading={ loading} error={error}>
             {/* <h1>Patients</h1> */}
